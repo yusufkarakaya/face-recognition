@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "tachyons";
 
-import Particles from "./components/Particles/Particles";
+import ParticlesJs from "./components/Particles/Particles";
 import "./App.css";
 import Navigation from "./components/Navigation/Navigation";
 import Logo from "./components/Logo/Logo";
@@ -30,7 +30,6 @@ class App extends Component {
   };
 
   onSubmit = () => {
-    console.log("click");
     app.models
       .predict(
         "53e1df302c079b3db8a0a36033ed2d15",
@@ -47,7 +46,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Particles className="particles" />
+        <ParticlesJs />
         <Navigation />
         <Logo />
         <Rank />
