@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "tachyons";
 
-import ParticlesJs from "./components/Particles/Particles";
+// import ParticlesJs from "./components/Particles/Particles";
 import "./App.css";
 import Navigation from "./components/Navigation/Navigation";
 import Logo from "./components/Logo/Logo";
@@ -111,7 +111,7 @@ class App extends Component {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
       <div className="App">
-        <ParticlesJs />
+        {/* <ParticlesJs /> */}
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}
